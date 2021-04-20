@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_douban/pages/main/main_home.dart';
-import 'package:flutter_douban/widgets/rating_widget.dart';
-
-import 'widgets/dash_line_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +12,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
+        //去掉默认的水波纹效果
+        highlightColor: Colors.transparent
       ),
       home: MainHomePage(),
     );
