@@ -14,8 +14,6 @@ class _MainHomePageState extends State<MainHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // List<BottomNavigationBarItem> _items = items.toList();
-    // print(_items);
     return Scaffold(
       appBar: AppBar(
         title: Text(title),

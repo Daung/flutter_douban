@@ -2,20 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_douban/constant/text/string.dart';
 
 List<String> _activeIcons = [
-  "assets/images/tabbar/home_active.png",
-  "assets/images/tabbar/subject_active.png",
-  "assets/images/tabbar/group_active.png",
-  "assets/images/tabbar/mall_active.png",
-  "assets/images/tabbar/profile_active.png"
+  getImagePath("home_active"),
+  getImagePath("subject_active"),
+  getImagePath("group_active"),
+  getImagePath("mall_active"),
+  getImagePath("profile_active")
 ];
 
 List<String> _icons = [
-  "assets/images/tabbar/home.png",
-  "assets/images/tabbar/subject.png",
-  "assets/images/tabbar/group.png",
-  "assets/images/tabbar/mall.png",
-  "assets/images/tabbar/profile.png"
+  getImagePath("home"),
+  getImagePath("subject"),
+  getImagePath("group"),
+  getImagePath("mall"),
+  getImagePath("profile")
 ];
+//封装方法获取图片文件的路径
+String getImagePath(String name) {
+  return "assets/images/tabbar/$name.png";
+}
 
 class _NavigationBarItem {
   final String label;
